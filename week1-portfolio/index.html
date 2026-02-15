@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Personal portfolio website showcasing skills, projects, and contact information." />
+  <title>Your Name | Portfolio</title>
+
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+  <!-- Skip link for keyboard users -->
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <a class="logo" href="#home" aria-label="Go to homepage">
+        <span class="logo-mark" aria-hidden="true">◼</span>
+        <span class="logo-text">YourName</span>
+      </a>
+
+      <nav class="site-nav" aria-label="Primary navigation">
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-controls="nav-menu"
+          aria-expanded="false"
+        >
+          <span class="sr-only">Toggle navigation</span>
+          <span aria-hidden="true">☰</span>
+        </button>
+
+        <ul id="nav-menu" class="nav-menu">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="site-main" tabindex="-1">
+    <!-- HERO -->
+    <section id="home" class="hero" aria-label="Introduction">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <p class="eyebrow">Front-End Developer</p>
+          <h1 class="hero-title">Hi, I’m <span class="accent">Your Name</span>.</h1>
+          <p class="hero-subtitle">
+            I build clean, responsive, accessible websites using HTML, CSS, and JavaScript.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn primary" href="#projects">View Projects</a>
+            <a class="btn ghost" href="#contact">Contact Me</a>
+          </div>
+
+          <ul class="hero-links" aria-label="Social links">
+            <li><a href="#" target="_blank" rel="noreferrer">GitHub</a></li>
+            <li><a href="#" target="_blank" rel="noreferrer">LinkedIn</a></li>
+            <li><a href="#" target="_blank" rel="noreferrer">Email</a></li>
+          </ul>
+        </div>
+
+        <div class="hero-card" aria-label="Quick summary">
+          <div class="profile" role="group" aria-label="Profile">
+            <div class="avatar" aria-hidden="true">YN</div>
+            <div>
+              <p class="profile-name">Your Name</p>
+              <p class="profile-meta">India • Open to opportunities</p>
+            </div>
+          </div>
+
+          <div class="stats" role="list" aria-label="Highlights">
+            <div class="stat" role="listitem">
+              <p class="stat-number">5+</p>
+              <p class="stat-label">Projects</p>
+            </div>
+            <div class="stat" role="listitem">
+              <p class="stat-number">HTML/CSS</p>
+              <p class="stat-label">Core Skills</p>
+            </div>
+            <div class="stat" role="listitem">
+              <p class="stat-number">Responsive</p>
+              <p class="stat-label">Design</p>
+            </div>
+          </div>
+
+          <a class="btn small" href="#contact">Let’s work together</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <div class="container">
+        <header class="section-header">
+          <h2>About</h2>
+          <p>Short intro about who you are and what you do.</p>
+        </header>
+
+        <div class="about-grid">
+          <article class="card">
+            <h3>Background</h3>
+            <p>
+              Write 4–6 lines about your learning journey, interests, and what kind of roles/projects you want.
+              Keep it simple and professional.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>What I’m focused on</h3>
+            <ul class="list">
+              <li>Building responsive layouts with Flexbox and CSS Grid</li>
+              <li>Writing semantic, accessible HTML</li>
+              <li>Basic JavaScript for interactivity and form validation</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section alt">
+      <div class="container">
+        <header class="section-header">
+          <h2>Skills</h2>
+          <p>Core technologies and tools I use.</p>
+        </header>
+
+        <div class="skills-grid" role="list" aria-label="Skills list">
+          <div class="chip" role="listitem">HTML5</div>
+          <div class="chip" role="listitem">CSS3</div>
+          <div class="chip" role="listitem">Responsive Design</div>
+          <div class="chip" role="listitem">Flexbox</div>
+          <div class="chip" role="listitem">CSS Grid</div>
+          <div class="chip" role="listitem">JavaScript</div>
+          <div class="chip" role="listitem">Git & GitHub</div>
+          <div class="chip" role="listitem">Accessibility</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+      <div class="container">
+        <header class="section-header">
+          <h2>Projects</h2>
+          <p>Some of my work (replace with your real projects).</p>
+        </header>
+
+        <div class="projects-grid">
+          <article class="project card">
+            <div class="project-top">
+              <h3>Project One</h3>
+              <p class="muted">A responsive landing page using Grid and Flexbox.</p>
+            </div>
+            <ul class="tags" aria-label="Project tech stack">
+              <li>HTML</li><li>CSS</li>
+            </ul>
+            <div class="project-actions">
+              <a class="btn small ghost" href="#" target="_blank" rel="noreferrer">Live</a>
+              <a class="btn small" href="#" target="_blank" rel="noreferrer">Code</a>
+            </div>
+          </article>
+
+          <article class="project card">
+            <div class="project-top">
+              <h3>Project Two</h3>
+              <p class="muted">A simple JavaScript mini app (e.g., to-do or calculator).</p>
+            </div>
+            <ul class="tags" aria-label="Project tech stack">
+              <li>HTML</li><li>CSS</li><li>JS</li>
+            </ul>
+            <div class="project-actions">
+              <a class="btn small ghost" href="#" target="_blank" rel="noreferrer">Live</a>
+              <a class="btn small" href="#" target="_blank" rel="noreferrer">Code</a>
+            </div>
+          </article>
+
+          <article class="project card">
+            <div class="project-top">
+              <h3>Project Three</h3>
+              <p class="muted">Portfolio v1 with accessible navigation and form validation.</p>
+            </div>
+            <ul class="tags" aria-label="Project tech stack">
+              <li>HTML</li><li>CSS</li><li>JS</li>
+            </ul>
+            <div class="project-actions">
+              <a class="btn small ghost" href="#" target="_blank" rel="noreferrer">Live</a>
+              <a class="btn small" href="#" target="_blank" rel="noreferrer">Code</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section alt">
+      <div class="container">
+        <header class="section-header">
+          <h2>Contact</h2>
+          <p>Send me a message. The form includes basic validation.</p>
+        </header>
+
+        <div class="contact-grid">
+          <div class="card">
+            <h3>Details</h3>
+            <p class="muted">Replace with your real contact details:</p>
+            <ul class="list">
+              <li><strong>Email:</strong> youremail@example.com</li>
+              <li><strong>Location:</strong> India</li>
+              <li><strong>Availability:</strong> Freelance / Internship</li>
+            </ul>
+          </div>
+
+          <form class="card form" id="contactForm" novalidate>
+            <div class="field">
+              <label for="name">Name</label>
+              <input id="name" name="name" type="text" autocomplete="name" required minlength="2" />
+              <p class="error" id="nameError" aria-live="polite"></p>
+            </div>
+
+            <div class="field">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" autocomplete="email" required />
+              <p class="error" id="emailError" aria-live="polite"></p>
+            </div>
+
+            <div class="field">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" required minlength="10"></textarea>
+              <p class="error" id="messageError" aria-live="polite"></p>
+            </div>
+
+            <button class="btn primary" type="submit">Send Message</button>
+            <p class="form-success" id="formSuccess" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Your Name. All rights reserved.</p>
+      <a href="#home" class="back-to-top">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
